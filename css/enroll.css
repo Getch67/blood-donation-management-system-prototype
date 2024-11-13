@@ -1,0 +1,187 @@
+:root {
+  --primary-color: #2a81bb;
+  --accent-color: rgb(209, 30, 30);
+  --background-color: rgba(174, 210, 235, 0.1);
+  --text-color: #000000;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.logo_div {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.logo_div img {
+  width: 100%;
+  height: auto;
+}
+
+.enroll_page {
+  margin: 20px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.enroll_page h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#EnrollmentForm {
+  width: 100%;
+  max-width: 1200px;
+  padding: 30px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-color);
+  backdrop-filter: blur(4px);
+  border: 1px solid var(--accent-color);
+}
+
+.enroll_container1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.enroll_container1 label,
+legend {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.input_div {
+  display: flex;
+  flex-direction: column;
+}
+
+.enroll_container1 input {
+  margin-bottom: 14px;
+}
+
+.enroll_container1 input[type="text"],
+.enroll_container1 input[type="number"],
+.enroll_container1 input[type="date"],
+.enroll_container1 input[type="tel"],
+.enroll_container1 input[type="email"] {
+  width: 100%;
+  height: 28px;
+  border: 1px solid rgb(126, 126, 126);
+  border-radius: 3px;
+  outline: none;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.sex_input {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sex_input input {
+  margin-left: 8px;
+}
+
+.enroll_container1 input[type="number"] {
+  width: 80px;
+}
+
+table {
+  width: 100%;
+  margin-top: 40px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid var(--text-color);
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: hsl(56, 100%, 69%);
+}
+
+table input {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 28px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.enroll_submit {
+  margin-top: 30px;
+  width: 200px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.enroll_submit:hover {
+  background: transparent;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.enroll_submit:focus {
+  transform: scale(0.9);
+}
+
+.error {
+  color: var(--accent-color);
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .enroll_page {
+    margin: 20px;
+  }
+
+  #EnrollmentForm {
+    padding: 20px;
+  }
+
+  .enroll_container1 {
+    grid-template-columns: 1fr;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    padding: 5px;
+  }
+}

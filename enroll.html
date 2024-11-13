@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blood Donor Enrollment Form</title>
+    <link rel="stylesheet" href="./css/enroll.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="enroll_page">
+        <div class="logo_div">
+          <img
+            src="./images/logo.png"
+            alt="Ethiopia Blood Donation Logo"
+            width="200"
+            height="67"
+          />
+        </div>
+        <h1>Blood Donor Enrollment Form</h1>
+        <form id="EnrollmentForm" name="EnrollmentForm">
+          <div class="enroll_container1">
+            <div class="input_div">
+              <label for="name">Name</label>
+              <input type="text" id="name" required />
+              <label for="occupation">Occupation</label>
+              <input type="text" id="occupation" />
+              <label for="city">City</label>
+              <input type="text" id="city" />
+              <label for="tele">Tele(Residence)</label>
+              <input type="tel" id="tele" />
+              <label for="po-box">P.O.Box</label>
+              <input type="text" id="po-box" />
+            </div>
+            <div class="input_div">
+              <label for="fatherName">Father's Name</label>
+              <input type="text" id="fatherName" required />
+              <label for="date">Date of Birth</label>
+              <input type="date" id="date" />
+              <label for="subcity">Sub-city/Region</label>
+              <input type="text" id="subcity" />
+              <label for="cellphone">Cellphone</label>
+              <input type="tel" id="cellphone" />
+              <label for="donorNumber">Donor Number</label>
+              <input type="text" id="donorNumber" />
+            </div>
+            <div class="input_div">
+              <label for="surname">Surname</label>
+              <input type="text" id="surname" required />
+              <label for="woreda">Woreda</label>
+              <input type="text" id="woreda" />
+              <label for="organization">Organization</label>
+              <input type="text" id="organization" />
+              <div class="age_sex">
+                <label for="age">Age</label>
+                <input
+                  type="number"
+                  id="age"
+                  name="Age"
+                  min="17"
+                  max="65"
+                  step="1"
+                  required
+                />
+                <fieldset class="sex_input">
+                  <legend>Sex:</legend>
+                  <input
+                    type="radio"
+                    id="male"
+                    name="sex"
+                    value="Male"
+                    required
+                  />
+                  <label for="male">Male</label>
+                  <input
+                    type="radio"
+                    id="female"
+                    name="sex"
+                    value="Female"
+                    required
+                  />
+                  <label for="female">Female</label>
+                </fieldset>
+              </div>
+            </div>
+            <div class="input_div">
+              <label for="title">Title</label>
+              <input type="text" id="title" />
+              <label for="zone">Zone</label>
+              <input type="text" id="zone" />
+              <label for="kebele">Kebele</label>
+              <input type="text" id="kebele" />
+              <label for="email">Email</label>
+              <input type="email" id="email" />
+            </div>
+          </div>
+          <table class="enroll_table">
+            <caption>
+              Donation Information
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col"><label for="Date">Date</label></th>
+                <th scope="col"><label for="DIN">DIN</label></th>
+                <th scope="col"><label for="Wt">Wt.</label></th>
+                <th scope="col"><label for="BP">B/P</label></th>
+                <th scope="col"><label for="Volume">Volume</label></th>
+                <th scope="col"><label for="ScreenedBy">Screened by</label></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="date" name="Date" id="Date" /></td>
+                <td><input type="text" name="DIN" id="DIN" /></td>
+                <td><input type="number" name="Wt" id="Wt" step="0.1" /></td>
+                <td><input type="text" name="BP" id="BP" /></td>
+                <td>
+                  <input type="number" name="Volume" id="Volume" step="0.1" />
+                </td>
+                <td><input type="text" name="ScreenedBy" id="ScreenedBy" /></td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <caption>
+              Additional Information
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col"><label for="Hgb">Hgb.</label></th>
+                <th scope="col"><label for="CheckedBy">Checked by</label></th>
+                <th scope="col">
+                  <label for="TypeOfDonation">Type of donation</label>
+                </th>
+                <th scope="col">
+                  <label for="BleedTime">Bleed Time(Start-End)</label>
+                </th>
+                <th scope="col"><label for="ABO">ABO & Rh</label></th>
+                <th scope="col"><label for="Remark">Remark</label></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="number" name="Hgb" id="Hgb" step="0.1" /></td>
+                <td><input type="text" name="CheckedBy" id="CheckedBy" /></td>
+                <td>
+                  <input
+                    type="text"
+                    name="TypeOfDonation"
+                    id="TypeOfDonation"
+                  />
+                </td>
+                <td><input type="text" name="BleedTime" id="BleedTime" /></td>
+                <td><input type="text" name="ABO" id="ABO" /></td>
+                <td><input type="text" name="Remark" id="Remark" /></td>
+              </tr>
+            </tbody>
+          </table>
+          <button type="submit" class="enroll_submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <script src="./js/enroll.js"></script>
+  </body>
+</html>

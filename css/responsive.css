@@ -1,0 +1,201 @@
+@media (max-width: 768px) {
+  body {
+    background: url("../images/Background.png") no-repeat center center fixed;
+    padding-top: 8rem;
+  }
+
+  header {
+    padding: 0 2rem;
+  }
+
+  .nav_bar {
+    display: none;
+  }
+
+  .visible {
+    display: flex;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .nav_bar_mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    flex-direction: column;
+    width: 70%;
+    background-color: var(--white);
+    border-right: 1px solid var(--accent-color);
+    justify-content: normal;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 2rem;
+    text-align: right;
+  }
+
+  .nav_links {
+    width: 70%;
+    margin-bottom: 0;
+  }
+
+  .hamburger {
+    top: calc(7rem/2);
+    right: 0;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    display: flex;
+    background: none;
+  }
+
+  .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    transform-origin: left;
+  }
+
+  #section1 {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home_container1,
+  .home_container2 {
+    margin-left: 5%;
+  }
+
+  .main_heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .text2,
+  .text3 {
+    font-size: 2.5rem;
+  }
+
+  .login_menu .menu {
+    left: 0;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .login_menu:focus-within .menu {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /* why donate */
+  .container {
+    width: 100%;
+  }
+
+
+  .content {
+    flex-direction: column;
+  }
+
+  .card {
+    flex: 1 1 100%;
+  }
+
+  .card-footer {
+    padding: 0 0 2rem;
+  }
+
+  /* how to donate */
+  .how-to-container {
+    width: 90%;
+  }
+
+  /* footer */
+  .footer {
+    padding: 2rem 2rem 1rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* user dashboard  */
+  .dashboard-nav ul {
+    flex-direction: column;
+  }
+
+  .dashboard-nav a {
+    display: block;
+  }
+
+  .donation-table {
+    font-size: 0.9rem;
+  }
+
+  /* admin dashboard */
+  .stats-container,
+  .search-container,
+  .filter-container {
+    flex-direction: column;
+  }
+
+  .data-table {
+    font-size: 0.9rem;
+  }
+
+  /* about page */
+  .about-container {
+    margin: 1rem auto;
+    border-radius: 0;
+  }
+
+  .about-header {
+    padding: 1.5rem;
+  }
+
+  .about-logo {
+    width: 100px;
+  }
+
+  .about-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-content {
+    padding: 1.5rem;
+  }
+
+  /* contact page */
+  .contact-container {
+    grid-template-columns: 1fr;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .main_heading {
+    font-size: 1.5rem;
+  }
+
+  .text2,
+  .text3 {
+    font-size: 2rem;
+  }
+
+  .all_btn {
+    width: 150px;
+    height: 45px;
+  }
+}

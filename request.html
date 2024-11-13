@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blood Request Form - Blood Donation Center</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/request.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="log-container">
+        <img src="./images/logo.png" alt="Ethiopia Blood Donation Logo" />
+      </div>
+      <h1 class="request_h1">Blood Request Form</h1>
+      <p class="intro">
+        For hospitals, clinics, and other medical facilities to request blood
+        supplies.
+      </p>
+
+      <div class="request-container">
+        <form id="blood-request-form" class="request-form">
+          <div class="form-group">
+            <label for="facility-name">Facility Name:</label>
+            <input
+              type="text"
+              id="facility-name"
+              name="facility-name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="contact-person">Contact Person:</label>
+            <input
+              type="text"
+              id="contact-person"
+              name="contact-person"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+
+          <div class="form-group">
+            <label for="blood-type">Blood Type Needed:</label>
+            <select id="blood-type" name="blood-type" required>
+              <option value="">Select Blood Type</option>
+              <option value="A+">A+</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B-">B-</option>
+              <option value="AB+">AB+</option>
+              <option value="AB-">AB-</option>
+              <option value="O+">O+</option>
+              <option value="O-">O-</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="units">Number of Units:</label>
+            <input type="number" id="units" name="units" min="1" required />
+          </div>
+
+          <div class="form-group">
+            <label for="urgency">Urgency Level:</label>
+            <select id="urgency" name="urgency" required>
+              <option value="">Select Urgency Level</option>
+              <option value="low">Low - Within 72 hours</option>
+              <option value="medium">Medium - Within 24 hours</option>
+              <option value="high">High - Within 6 hours</option>
+              <option value="critical">Critical - Immediate</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="additional-info">Additional Information:</label>
+            <textarea
+              id="additional-info"
+              name="additional-info"
+              rows="4"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="submit-btn">Submit Request</button>
+          </div>
+        </form>
+
+        <div id="request-status" class="request-status">
+          <h2>Your Request Status</h2>
+          <div id="status-list" class="status-list"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script>
+    <script src="./js/request.js"></script>
+  </body>
+</html>
