@@ -6,6 +6,8 @@ This project is a **web-based Blood Donation Management System** designed to str
 It serves as a prototype for a system where users can easily register online, schedule donations, and allow requestors such as hospitals and clinics to request blood.
 The system also facilitates data storage for users and blood inventory, making the donation process efficient and accessible.
 
+- Check live website here: https://ebdms.netlify.app/
+
 ---
 
 ## ✨ Features
